@@ -1,4 +1,4 @@
-# Nombre del Proyecto - Theme de WordPress
+# Panama Pacifico
 
 Este es un theme personalizado para WordPress que está diseñado para trabajar con **Elementor**, **Elementor Pro** y **ACF Pro**. Utiliza dependencias de Node.js para facilitar el desarrollo y la compilación del theme.
 
