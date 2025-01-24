@@ -1,0 +1,128 @@
+:root {
+    --text-color: #8B928B;
+    --border-color-active: #86b7fe;
+}
+
+body {
+
+    p {
+        margin: 0;
+    }
+
+    .custom-tabs {
+        .e-n-tabs {
+            --n-tabs-gap: 3px;
+        }
+
+        .e-n-tabs-heading {
+            flex: 0 0 50%;
+            padding-right: 8.76%;
+
+            .e-n-tab-title {
+                padding-left: 10px;
+
+                .e-n-tab-title-text {
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 25.6px;
+                        text-align: left;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        .e-n-tabs-content {
+            position: relative;
+            height: 480px;
+
+            >div {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 100%;
+                opacity: 0.5;
+                transform: translate(-50%, 0);
+                z-index: 1;
+                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                display: flex !important;
+                justify-content: space-between;
+
+                &.e-active {
+                    opacity: 1;
+                    transform: translate(-50%, 0);
+                    z-index: 3;
+                }
+            }
+        }
+    }
+
+    #ast-scroll-top {
+        display: none !important;
+    }
+
+    .text-white {
+        color: $white !important;
+    }
+
+    .with_frm_style {
+        --field-pad: 10px 12px;
+        --border-color: #ABB0AB;
+        --field-border-width: 1.5px;
+        --border-radius: 48px;
+        --border-color-active: #86b7fe;
+        --field-font-size: 18px;
+        --field-height: 48px;
+        --line-height: 21.6px;
+        --text-color: #8B928B;
+
+        .frm_form_fields {
+            h5 {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+                font-size: var(--e-global-typography-accent-font-size);
+                font-weight: var(--e-global-typography-accent-font-weight);
+                line-height: var(--e-global-typography-accent-line-height);
+                margin-bottom: 40px;
+            }
+
+            .form-field {
+
+                input:not([type=file]):not([type=range]):not([readonly]),
+                select,
+                textarea {
+
+                    &:focus,
+                    &:active {
+                        background-color: #ffffff;
+                        border-color: var(--border-color-active);
+                        color: var(--text-color);
+                        box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+                    }
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .form-control {
+        color: var(--text-color);
+
+        &:focus {
+            background-color: #ffffff;
+            border-color: var(--border-color-active);
+            color: var(--text-color);
+            box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+            outline: 0;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración de IDEs/editores
+.vscode/
+.idea/
+*.log
+
+
+# Dependencias
+node_modules/
+vendor/
+dist/
+
+# Backups
+*.zip
+*.bak

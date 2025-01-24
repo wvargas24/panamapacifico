@@ -1,0 +1,40 @@
+// Colores
+$primary-color: #4CB74A;
+$secondary-color: #895EF9;
+$background-color: #ffffff;
+$text-color: #131413;
+$white: #ffffff;
+$black: #131413;
+
+$color-100: #F9F9F9;
+$color-200: #ABB0AB;
+
+// Tipografía
+$primary-font: 'Neue Montreal', sans-serif;
+$secondary-font: 'Plexes', sans-serif;
+
+// Breakpoints
+$breakpoint-xs: 320px; // Extra pequeño (móviles pequeños)
+$breakpoint-sm: 576px; // Pequeños (móviles)
+$breakpoint-md: 768px; // Medianos (tablets)
+$breakpoint-lg: 992px; // Grandes (escritorios)
+$breakpoint-xl: 1200px; // Extra grandes (pantallas grandes)
+
+// Espaciados (márgenes y rellenos)
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 32px;
+$space-lg: 64px;
+
+// Tamaños de fuentes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+
+// Sombra
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// Otros
+$border-radius: 4px;

@@ -1,0 +1,325 @@
+html {
+    background: #111;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+#wp-auth-check-form,
+#wp-auth-check-wrap #wp-auth-check-form,
+#wp-auth-check,
+.wp-auth-check {
+    background: #f1f1f1 !important;
+}
+
+body.login {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.login .logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login form .forgetmenot label,
+.login label,
+.login #backtoblog,
+.login #nav {
+    font-size: 14px;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+button,
+button:focus,
+button:hover,
+button:active {
+    -webkit-appearance: none !important;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+button,
+button:focus,
+button:hover,
+button:active,
+a:focus,
+a:focus:focus,
+a:hover:focus,
+a:active:focus,
+button:focus,
+button:focus:focus,
+button:hover:focus,
+button:active:focus {
+    outline: 0;
+    outline-offset: 0;
+    outline-color: transparent;
+    outline-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:active,
+a:focus,
+input,
+input:active,
+input:focus,
+button:focus,
+button:active,
+a:active:focus,
+a:focus:focus,
+input:focus,
+input:active:focus,
+input:focus:focus,
+button:focus:focus,
+button:active:focus {
+    outline: 0;
+    outline-offset: 0;
+    outline-color: transparent;
+    outline-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    resize: none;
+}
+
+input:focus,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: #f1f1f1 !important;
+}
+
+a:active,
+a:focus,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner,
+a:active:focus,
+a:focus:focus,
+button::-moz-focus-inner:focus,
+input[type="reset"]::-moz-focus-inner:focus,
+input[type="button"]::-moz-focus-inner:focus,
+input[type="submit"]::-moz-focus-inner:focus,
+input[type="file"]>input[type="button"]::-moz-focus-inner:focus {
+    outline: none;
+    outline-offset: 0;
+    outline-color: transparent;
+    outline-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+a,
+input,
+button {
+    -webkit-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+
+a,
+input,
+button,
+a span,
+input span,
+button span,
+a:focus,
+input:focus,
+button:focus,
+a span:focus,
+input span:focus,
+button span:focus {
+    outline: 0;
+    outline-offset: 0;
+    outline-color: transparent;
+    outline-style: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body.login #nav {
+    position: relative;
+    margin: 20px 0 0 0;
+    display: block;
+    text-align: center;
+}
+
+body.login #backtoblog {
+    text-align: center;
+}
+
+body.login #login {
+    position: relative;
+    display: block;
+    max-width: 320px;
+    padding: 10% 0;
+    margin: auto;
+}
+
+body.login h1 a {
+    background: transparent !important;
+    width: 84px;
+    height: 81px;
+    text-indent: -9999px;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px auto;
+    display: none !important;
+}
+
+body.login form {
+    display: block;
+    margin: 0 auto;
+    font-weight: normal;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -khtml-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 26px 30px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.login form .input {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    width: 100%;
+    padding: 8px 14px;
+    margin: 4px 0 18px;
+    border: 1px solid #bbb;
+    background: #f1f1f1;
+    outline: none;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0);
+    -moz-box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0);
+    box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0);
+    -webkit-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+
+body.login form .input:focus {
+    background: #fff;
+    border-color: #bbb;
+}
+
+body.login label {
+    color: #999;
+}
+
+#login form p.submit {
+    margin-top: 0;
+}
+
+.login form .forgetmenot {
+    margin: 0 !important;
+    padding: 17px 0 0;
+}
+
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px 2px;
+    right: 24px;
+    margin-top: 8px;
+    position: absolute;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+    text-shadow: none;
+    font-weight: 600;
+    box-shadow: none;
+    color: #fff;
+    background: #40a7e8;
+    outline: none !important;
+}
+
+.wp-core-ui .button-group.button-large .button:hover,
+.wp-core-ui .button.button-large:hover,
+.wp-core-ui .button-group.button-large .button:active,
+.wp-core-ui .button.button-large:active {
+    background: #111;
+    color: #fff;
+}
+
+#wp-auth-check-form body.login form {
+    padding-bottom: 10px;
+}
+
+#wp-auth-check-form body.login label {
+    color: #666 !important;
+}
+
+#wp-auth-check-form .login h1 {
+    display: none !important;
+}
+
+html,
+#wp-auth-check-form,
+#wp-auth-check-wrap #wp-auth-check-form,
+#wp-auth-check,
+.wp-auth-check {
+    background: #15181f !important;
+}
+
+body.login a,
+body.login a:focus,
+body.login #backtoblog a,
+body.login #backtoblog a:focus,
+body.login #nav a,
+body.login #nav a:focus {
+    text-decoration: none;
+    text-align: center;
+    color: #40a7e8;
+}
+
+body.login a:hover,
+body.login a:active,
+body.login a:focus:hover,
+body.login a:focus:active,
+body.login #backtoblog a:hover,
+body.login #backtoblog a:active,
+body.login #backtoblog a:focus:hover,
+body.login #backtoblog a:focus:active,
+body.login #nav a:hover,
+body.login #nav a:active,
+body.login #nav a:focus:hover,
+body.login #nav a:focus:active {
+    color: #fff;
+}

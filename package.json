@@ -1,0 +1,51 @@
+{
+  "name": "astra-child",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/scss/style.scss dist/css/style.css --style compressed",
+    "postcss": "postcss dist/css/style.css --use autoprefixer -o dist/css/style.css",
+    "minify-js": "terser assets/js/*.js -o dist/js/scripts.min.js",
+    "build": "npm run sass && npm run postcss && npm run minify-js && webpack --mode production",
+    "watch:sass": "sass --watch assets/scss/style.scss:dist/css/style.css --style compressed",
+    "watch:js": "chokidar 'assets/js/*.js' -c 'npm run minify-js'",
+    "start": "concurrently \"npm run watch:sass\" \"npm run watch:js\" \"webpack --watch\"",
+    "compile": "npm run build && node zipgenerator.js",
+    "release": "standard-version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "standard-version": "^9.3.2",
+    "style-loader": "^4.0.0",
+    "terser": "^5.37.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "accordion-js": "^3.4.0",
+    "archiver": "^5.3.0",
+    "bootstrap": "^5.3.3",
+    "dotenv": "^10.0.0",
+    "font-awesome": "^4.7.0",
+    "sal.js": "^0.8.5",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.1"
+  }
+}

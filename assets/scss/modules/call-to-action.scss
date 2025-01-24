@@ -1,0 +1,28 @@
+.call-to-action-block {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #005bb5;
+        }
+    }
+}

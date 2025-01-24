@@ -1,0 +1,104 @@
+// Wysiwyg Editor
+body.mce-content-body {
+    background: #eee !important;
+}
+
+.mce-container iframe {
+    height: auto !important;
+    min-height: 300px;
+}
+
+// CodeMirror fix
+.CodeMirror pre {
+    padding-left: 38px !important;
+}
+
+// Modal windows
+.openModal {
+    position: fixed !important;
+    z-index: 30001;
+    top: 50px;
+    left: 50%;
+    margin-left: -400px !important;
+    max-height: 80%;
+    overflow: auto;
+    width: 800px;
+}
+
+// ACF styles
+.field_type-flexible_content .field_type-flexible_content .acf-flexible-content .layout .acf-input-table {
+    display: none;
+}
+
+.field_type-flexible_content .field_type-flexible_content .acf-flexible-content .layout .acf-input-table .acf-input-table {
+    display: table;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-left: 0px;
+}
+
+.acf-layout-modal-clickmask {
+    content: " ";
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 30000;
+}
+
+.acf-field-message {
+    background: #f9f9f9;
+    color: #222;
+    padding: 40px 13px 2px !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+    border-top: 6px solid rgba(0, 0, 0, 0.04) !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.acf-field-message:first-child {
+    border-top: 0 !important;
+}
+
+.acf-label xmp {
+    display: block;
+    white-space: pre-wrap;
+    padding: 10px 14px;
+    margin: 4px 0 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #777;
+    background: #eee;
+    overflow: hidden;
+}
+
+.acf-label xmp.code-intro {
+    color: #777;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: transparent;
+    padding: 10px 2px 0;
+}
+
+/* .edit-post-layout__metaboxes {
+  opacity: 0.0;
+}
+.edit-post-layout__metaboxes.page-loaded {
+  opacity: 1.0;
+} */
+
+.form-table>tbody>.acf-field>.acf-label {
+    padding-left: 20px !important;
+}
+
+body.wp-admin #wpfooter {
+    background: #fff;
+    border-top: 1px solid #eee;
+}
