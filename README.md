@@ -60,9 +60,9 @@ Si deseas contribuir al proyecto, sigue estos pasos:
 
 1.  Haz un fork del repositorio.
 2.  Crea una nueva rama para tus cambios:
-   ```bash
-    git checkout -b nombre-de-tu-rama
-    ```
+```bash
+git checkout -b nombre-de-tu-rama
+```
 3.  Realiza tus modificaciones.
 4.  Haz un commit de tus cambios y súbelos a tu fork.
 5.  Envía un pull request con una descripción clara de los cambios realizados.
